@@ -37,18 +37,18 @@ html, body {
   text-decoration: none;
   margin: 0 1rem;
   font-size: 1.3rem;
-  transition: font-size 400ms ease-in-out;
+  /* transition: font-size 400ms ease-in-out; */
 }
 
 .small {
-  height: 50px !important;
+  /* height: 50px !important; */
   background: var(--dark-tan) !important;
 
 }
 
 .small li a {
   color: var(--light-tan)!important;
-  font-size: 1rem !important;
+  /* font-size: 1rem !important; */
 }
 
 .wrapper {
