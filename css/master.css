@@ -1,0 +1,234 @@
+:root {
+  --light-tan: #fbeec1;
+  --sky-blue: #659dbd;
+  --dark-tan: #bc986a;
+  --salmon: #daad86;
+  --military-green: #8d8741;
+  --dark-grey: #534f46;
+  --box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+  background: var(--light-tan);
+}
+
+#nav {
+  background: var(--light-tan);
+  height: 70px;
+  width: 100%;
+  top:0;
+  left: 0;
+  position: fixed;
+  transition: all 400ms ease-in-out;
+}
+
+#nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-right: 70px;
+}
+
+#nav li a{
+  color: var(--military-green);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  transition: font-size 400ms ease-in-out;
+}
+
+.small {
+  height: 50px !important;
+  background: var(--dark-tan) !important;
+
+}
+
+.small li a {
+  color: var(--light-tan)!important;
+  font-size: 1rem !important;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: .5fr 1fr;
+  height: 100%;
+
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 0;
+  height: 800px;
+  background-image: url("http://www.laborfuerdesign.de/.cm4all/uproc.php/0/final/Produkte/.Kugelvase_Seladon.jpg/picture-800");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.hero-container img {
+  margin-bottom: 0;
+}
+
+.hero-container h1 {
+  text-align: right;
+  font-weight: 700;
+  margin-right: 40px;
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.hero-container h4 {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.hero-container p {
+  align-self: flex-end;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-shadow: var(--box-shadow);
+
+}
+
+.hero-container .spacer {
+  flex: 0.5;
+}
+
+.main{
+  margin: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-item h3 {
+  text-align: center;
+}
+
+.main-item p {
+  margin: 15px;
+}
+
+.funktion, .form, .portfolio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 10px;
+}
+
+.funktion .copy, .form .copy, .portfolio .copy{
+  margin: 20px 40px;
+  color: var(--dark-grey);
+  text-align: justify;
+}
+
+.funktion .copy, .form .copy, .portfolio .copy p {
+  font-size: 1.2em;
+}
+
+.funktion .image, .form .image, .portfolio .image {
+  text-align: center;
+}
+
+.funktion .image img, .form .image img, .portfolio .image img{
+  height: 300px;
+  width: 300px;
+  box-shadow: var(--box-shadow);
+  box-sizing: border-box;
+}
+
+.hr {
+  border: solid 1px var(--dark-tan);
+  width: 75%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.news-header {
+  text-align: center;
+  margin: 0;
+  color: var(--dark-grey);
+  font-size: 1.8rem;
+}
+
+.news {
+  margin: 20px 30px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news-item {
+  color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.news-item h5 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--dark-grey);
+  padding-bottom: 9px;
+}
+
+.news-item p {
+  font-size: 1.1rem;
+}
+
+.news-item a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background: black;
+
+}
+
+.footer ul{
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  list-style:none;
+}
+
+.footer ul li {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer .spacer {
+  flex: 1;
+}
+
+.footer ul li {
+  margin: 1rem 1.2rem;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer img {
+  margin: 0;
+  padding: 0;
+}
