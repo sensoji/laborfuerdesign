@@ -2,7 +2,7 @@ const navbar = document.getElementById('nav');
 
 Rx.Observable.fromEvent(window, 'scroll')
   .subscribe(event => {
-    if(window.scrollY > 100){
+    if(window.scrollY > 250){
       navbar.classList.add('small');
     }else {
       navbar.classList.remove('small');
